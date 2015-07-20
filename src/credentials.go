@@ -1,4 +1,4 @@
-package imosaws
+package main
 
 import (
 	"appengine"

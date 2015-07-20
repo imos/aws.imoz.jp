@@ -1,18 +1,16 @@
-# application: imoslock
-# version: 1
+application: aws-imoz-jp
+version: master
 runtime: go
 api_version: go1
-env_variables:
-  AWS_REGION: 'ap-northeast-1'
 threadsafe: true
 automatic_scaling:
   max_idle_instances: 1
   min_pending_latency: 5s
 
 handlers:
-- url: /configure/
+- url: /.*
   script: _go_app
   login: admin
 
-- url: /.*
-  script: _go_app
+env_variables:
+  AWS_REGION: 'ap-northeast-1'

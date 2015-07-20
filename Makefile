@@ -1,5 +1,10 @@
+APP_ID=aws-imoz-jp
+
 install: configure
-	appcfg.py update src
+	goapp deploy -application=$(APP_ID) -version=master src/
+
+format:
+	goapp fmt src/*.go
 
 test: configure
 	GOPATH="$$(pwd)" goapp test src/*.go

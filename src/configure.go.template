@@ -1,4 +1,4 @@
-package imosaws
+package main
 
 var AwsRegion = "ap-northeast-1"
 var AwsKey = ""
