@@ -1,0 +1,4 @@
+cron:
+- description: EC2 monitoring
+  url: /cron/instances
+  schedule: every 60 minutes
