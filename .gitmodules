@@ -1,0 +1,18 @@
+[submodule "src/github.com/aws/aws-sdk-go"]
+	path = src/github.com/aws/aws-sdk-go
+	url = https://github.com/aws/aws-sdk-go
+[submodule "src/github.com/lsegal/gucumber"]
+	path = src/github.com/lsegal/gucumber
+	url = https://github.com/lsegal/gucumber
+[submodule "src/github.com/vaughan0/go-ini"]
+	path = src/github.com/vaughan0/go-ini
+	url = https://github.com/vaughan0/go-ini
+[submodule "src/github.com/stretchr/testify"]
+	path = src/github.com/stretchr/testify
+	url = https://github.com/stretchr/testify
+[submodule "src/github.com/stretchr/objx"]
+	path = src/github.com/stretchr/objx
+	url = https://github.com/stretchr/objx
+[submodule "src/github.com/shiena/ansicolor"]
+	path = src/github.com/shiena/ansicolor
+	url = https://github.com/shiena/ansicolor
