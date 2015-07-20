@@ -8,11 +8,15 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 )
 
-func GetAwsConfig(c appengine.Context) *aws.Config {
+func GetAwsRegionalConfig(c appengine.Context, region string) *aws.Config {
 	config := *aws.DefaultConfig
-	config.Region = AwsRegion
+	config.Region = region
 	config.Credentials =
 		credentials.NewStaticCredentials(AwsKey, AwsSecretKey, "")
 	config.HTTPClient = urlfetch.Client(c)
 	return &config
+}
+
+func GetAwsConfig(c appengine.Context) *aws.Config {
+	return GetAwsRegionalConfig(c, AwsRegion)
 }

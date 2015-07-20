@@ -12,5 +12,8 @@ handlers:
   script: _go_app
   login: admin
 
+inbound_services:
+- warmup
+
 env_variables:
   AWS_REGION: 'ap-northeast-1'
